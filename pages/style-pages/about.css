@@ -1,0 +1,122 @@
+:root {
+  --first-color: #6153cc;
+  --second-color: #6027d1;
+  --white-color: #fff;
+  --second-gray-dark-color: #171717;
+  --title-color: #333;
+  --text-color: #222;
+  --font: "Raleway", sans-serif;
+  --second-font: "Montserrat", sans-serif;
+  --border: 0.1rem solid var(--first-color);
+  --border-radius: 0.5rem;
+  --max-width: 1200px;
+}
+
+/* *************************** Reset ******************************* */
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.btn {
+  width: 200px;
+  margin: 2rem;
+  padding: 1rem;
+
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  border-radius: var(--border-radius);
+  background: var(--first-color);
+  color: var(--white-color);
+  transition: box-shadow 1s;
+}
+
+.btn:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) 0.313rem 0.313rem,
+    rgba(240, 46, 170, 0.3) 0.625rem 0.625rem,
+    rgba(240, 46, 170, 0.2) 0.938rem 0.938rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+  padding: 0 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin: 2rem auto 1rem auto;
+  padding: 0.1rem;
+  text-align: center;
+  border-bottom: 0.4rem solid var(--first-color);
+}
+
+/* ********************* Site styles ******************************* */
+
+.body-background {
+  background-image: url(../assets-pages/background-body.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.about-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container p {
+  margin: 1rem auto;
+  font-family: var(--second-font);
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.footer {
+  font-family: var(--second-font);
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--text-color);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+.footer a {
+  color: var(--text-color);
+}
+
+.footer a:hover {
+  color: var(--second-color);
+}
